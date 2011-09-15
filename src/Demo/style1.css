@@ -1,0 +1,925 @@
+﻿body {
+ font-family: Verdana,Arial,Helvetica,sans-serif;
+ color: #3B3B3B;
+ font-size: 8pt;
+ background-color: transparent;
+}
+
+html {
+/*
+background-image: url("images/features-frame-bg.jpg");
+background-repeat:repeat-x;
+background-position: 0px 40px;
+background-color: #0d0d0d;
+*/
+}
+
+.s4-ca {
+    background: none repeat scroll 0 0 #ffffff!important;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+#contentContainerHome {
+	display:block;
+	background-image:url("images/Brightcove_3DShapes.png");
+	background-repeat: no-repeat;
+	background-position: 400px 200px;	
+}
+
+#contentContainer {
+	display:block;
+	background-repeat: no-repeat;
+	background-position: 780px 220px;	
+}
+
+
+body #s4-bodyContainer {
+    overflow: hidden;
+	padding:0px;
+    width: 100%;
+}
+
+#contentDiv {
+	left: 0px!important;
+	top: 0px!important;
+	width:800px;
+	height: 100%;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 26px;
+	float: left;
+	position: relative;
+}
+
+#contentDiv {
+	float:left;
+	position:relative;
+}
+
+#top {
+	width: 100%;
+	height: auto;
+	overflow:hidden;
+	float:left;
+	display:block;
+}
+
+
+#logo {
+	width: 250px;
+	height: 61px;
+	overflow: hidden;
+	margin-right: 16px;
+	margin-bottom: 24px;
+	float: left;
+	display:block;
+}
+
+
+#s4-ribbonrow {
+	background-image: url("images/ribbonBG.jpg");
+	background-repeat: repeat-x;
+	height: 44px;
+}
+
+#s4-topheader2 {
+    display: none;
+}
+
+.s4-title {
+    display: none;
+}
+
+body #s4-leftpanel-content {
+    display: none;
+}
+
+
+.s4-ca {
+    background: none repeat scroll 0 0 #ffffff;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+
+.ms-WPTitle span {
+    color: #ADADAD;
+    font-size: 24px!important;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    }
+    
+.ms-WPTitle, .ms-WPTitle a {
+    color: #96A44F;
+    font-weight: bold;
+}
+
+.result
+{
+    border-top: 1px solid #ADADAD;
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    width: 600px;
+}
+
+.ms-WPBody a:link {
+    color: #96A44F;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ms-WPBody a:visited {
+	color: #96A44F;	
+}
+
+.result A.videoLink
+{
+    font-weight: bold;
+    padding-left: 16px;
+}
+
+.result A.videoLink:focus
+{
+    text-decoration:none;
+}
+
+.result .description
+{
+	margin: 0 50px 0 93px;
+	padding: 5px 0 0 0;
+	width: 400px;
+}
+
+.result .tags
+{
+	clear: both;
+	padding: 0px 0 0 93px;
+	width: 400px;
+	word-wrap:break-word;
+}
+
+.result .thumbnail
+{
+    float: left;
+    height: 100%;
+    padding: 0px;
+    margin-left: 10px;
+    width: 64px;
+}
+
+.result .thumbnail > IMG
+{
+	MAX-WIDTH: 64px;
+	MAX-HEIGHT: 64px;
+    border: 1px solid #adadad;
+}
+
+.searchBlock
+{
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+
+.searchBlock label 
+{
+    width:45px; font-weight:normal; display:block; float:left;
+	padding-right: 20px;
+	padding-top: 3px;
+	padding-left: 15px;
+}
+
+.editLink
+{
+	POSITION: relative; DISPLAY: block; FLOAT: right; right: 10px;
+}
+
+.videoBlock textarea, .videoBlock input, .videoBlock select {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+.videoBlock textarea {
+	padding: 5px 0px 5px 5px;
+	line-height: 15px;
+}
+
+#longDesc {
+	height: 75px;
+	width: 350px;
+}
+
+.videoBlock > div
+{
+    clear: both;
+    margin-bottom: 3px;
+    width: auto;
+}
+
+.videoBlock div > label 
+{
+    width:130px; 
+    font-weight:normal; 
+    float:left;
+	padding-right: 20px;
+	padding-top: 3px;
+	float:left;
+	display:block;
+}
+
+.moreVideos {
+	float:left;
+	width: 500px!important;
+}
+
+.moreVideos label {
+	display:none!important;
+}
+
+.buttonBlock
+{
+	margin-left: 150px;	
+	float:left;
+}
+
+.videoBlock div > input[type=file].imageUpload
+{
+/*
+    width:83px;
+    margin-left:-4px;
+    vertical-align:middle;
+    padding:0 0 0 0;
+    margin-top:-2px;
+*/
+}
+
+.videoBlock #economics
+{
+    width:128px;
+}
+
+.videoBlock input[type=submit]
+{
+    margin-right:6px;
+}
+
+.videoBlock #videoStillUrl, .videoBlock #thumbnailUrl {
+	display:none;
+}
+
+
+.videoBlock #file_videoStillUrl, .videoBlock #file_thumbnailUrl {
+/*margin-left: 0px;*/
+}
+
+.required
+{
+    color:#ff0000;
+    font-weight:bold;
+}
+
+/* Changes 7/25/2011 */
+
+.playlistRow 
+{
+    border-top: 1px solid #ADADAD;
+    clear: both;
+    height: 48px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.playlistRow .thumbnail
+{
+	margin-left:-20px;
+}
+
+.playlistRow .thumbnail img
+{
+    border: 1px solid #adadad;
+}
+
+.playlist
+{
+	display:inline-block;
+}
+
+.playlist > a
+{
+	display:inline-block;
+    color:#0072bc;
+    cursor:pointer;
+    padding-bottom: 3px;
+    margin-left:10px;
+}
+
+.playlistEdit
+{
+	margin-right:15px;
+	float:right;
+	/*margin-top: -26px;*/
+}
+
+.playlistEdit > a
+{
+	float:right;
+}
+
+.blueBG 
+{
+    background: #F9F9F9;
+}
+
+.playlistRow input[type="checkbox"], .playlistRow input[type="radio"], .playlistRow .playlistId
+{
+    padding-right: 5px;
+    width: 30px;
+}
+.playlistRow .playlistId
+{
+    padding-right: 5px;
+    display:inline-block;
+    width:180px;
+}
+
+.playlistRow .playlistVideoCount
+{
+    display:inline-block;
+    width:60px;
+    margin-left:10px;
+}
+
+.playlistRow .playlistType 
+{
+    padding-right: 5px;
+    display:inline-block;
+}
+
+.playlistRow .playlistTags 
+{
+    padding-right: 5px;
+    display:inline-block;
+    width:150px;
+    overflow:hidden;
+    margin-bottom:-2px;
+}
+
+.playlistControls .newPlaylist
+{
+    clear:both;
+}
+
+.playlistControls .buttonSection
+{
+    margin-top: 10px;
+}
+
+.newPlaylist
+{
+    clear:both;
+}
+
+.newPlaylist > div
+{
+    margin-bottom: 5px;
+}
+
+.newPlaylist label
+{
+    width:70px;
+    display:block;
+    float:left;
+}
+
+.paging
+{
+    text-align:center;
+    margin:20px 20px 20px 20px;
+    width:150px;
+    clear:both;
+    display:block;
+}
+
+#divPicklist .paging
+{
+    margin:5px 5px 5px 5px;
+}
+
+.paging .itemRange
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.addVideo, .blogLink
+{
+    color: #96A44F;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.moreVideos input
+{
+    display:block;
+    margin-bottom:2px;
+}
+
+.fieldDescriptor
+{
+    font-size:9px;
+    font-style:italic;
+    padding-left:10px;
+}
+
+.videoPlaylist
+{
+    border-bottom: 1px solid #ADADAD;
+    margin-bottom: 15px;
+    width: 716px;
+}
+
+.videoEditor
+{
+    border-bottom: 1px solid #ADADAD;
+    margin-bottom: 15px;
+    width: 600px;
+    padding-bottom: 10px;
+}
+
+
+/* Picklist styles */
+.picklist, .picklistControls
+{
+    float:left;
+    vertical-align:middle;
+}
+
+.picklist .content
+{
+    width:208px;
+    height:270px;
+}
+
+.picklist .content
+{
+    width:208px;
+    height:250px;
+    overflow-x:hidden;
+    overflow-y:scroll;
+	border:1px solid silver;
+}
+
+.picklist .videosAvailable
+{
+	/*height:250px;*/
+    overflow-x:hidden;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.picklist .videosSelected
+{
+	/*height:250px;*/
+    overflow-x:hidden;
+    width: 300px;
+    margin-top: 9px;
+}
+
+.picklist .content .item
+{
+    width: 300px;
+    height:35px;
+    vertical-align:middle;
+    clear:both;
+    border-bottom:1px solid silver;
+    padding-top:5px;
+    padding-bottom:5px;
+    cursor:pointer;
+}
+    
+.videoName
+{
+    font-weight:bold;
+    color:#000000;
+}
+    
+.videoId
+{
+    color:Gray;
+}
+
+.picklist .videoCheckbox
+{
+    width:25px;
+    float:left;
+    display:none;
+}
+
+.sectionHeader
+{
+	padding-bottom: 5px;
+}
+   
+.videoThumb
+{
+    width:40px;
+    float:left;
+    margin-right:5px;
+    margin-left: 5px;
+}
+
+.videoMetadata
+{
+    width:210px;
+    float:left;
+}
+    
+.videoThumb img
+{
+    max-width:40px;
+    max-height:30px;
+}
+
+.picklistControls
+{
+	margin-top:80px;
+	width:50px;
+	text-align:center;
+}
+
+
+.picklistControls button
+{
+    margin-bottom:10px;
+    width:30px;
+    padding-left:2px;
+    padding-right:2px;
+}
+
+.picklistControls .controlSection
+{
+	margin-bottom:8px;
+	font-weight:bold;
+}
+
+.searchBox input
+{
+	width:181px;
+}
+
+.searchBox button
+{
+	width:25px;
+	background-image:url(/_layouts/images/gosearch15.png);
+}
+
+.searchBox button, .searchBox input
+{
+	margin:0 0 0 0;
+	border:none;
+	border:1px solid silver;
+}
+
+.searchBox_default_text
+{
+	font-style:italic;
+	color:silver;
+}
+
+.videoSelected
+{
+	background-color:#8bd1ee;
+}
+
+#playlistName, #playlistType, #tags, #videos
+{
+    width:200px;
+}
+
+#playlistName, #tags, #videos
+{
+    height:16px;
+}
+
+#playlistType
+{
+    height:20px;
+}
+
+#divPicklist
+{
+    margin-top:10px;
+    height:310px;
+}
+
+.picklist .moveButtons input
+{
+    vertical-align:middle;
+}
+
+.picklist .moveButtons
+{
+    width:208px;
+    height:16px;
+    clear:both;
+    color:#000000;
+    vertical-align:middle;
+}
+
+.picklist .moveButtons > input
+{
+    margin-left:1px;
+    float:left;
+}
+
+.picklist .moveButtons > span
+{
+    float:right;
+}
+
+.picklist .moveButtons label
+{
+    margin-top:2px;
+    float:left;
+    font-weight:normal;
+    color:gray;
+}
+
+.picklist .moveButtons button
+{
+    width:50px;
+    height:20px;
+    font-size:11px;
+    padding-top:0;
+}
+
+#defaultMenuDiv {
+    display: block;
+    float: left;
+    overflow: hidden;
+    padding: 20px;
+    width: 600px;
+ }
+
+.title {
+    color: #ADADAD;
+    font-size: 22px;
+    margin-bottom: 12px;
+    margin-top: 23px;
+    float:left;
+    display:block; 
+    }
+
+.pgName {
+	color: #679399;
+}
+
+.SIDescription {
+    color: #3B3B3B;
+    display: block;
+    float: left;
+    font-size: 13px;
+    margin-bottom: 26px;
+}
+
+#upload {
+	float:left;
+	width:100%;
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+#search {
+	float:left;
+	width:100%;
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+#wiki {
+	float:left;
+	width:100%;
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+
+#playlists {
+	float:left;
+	width:100%;
+	display:block;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.menuIcon {
+    float: left;
+    height: 70px;
+    margin-right: 30px;
+    width: 70px;   
+    }
+
+.menuText {
+    color: #ADADAD;
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 9pt;
+    margin-right: 12px;
+    margin-top: 4px;
+    width: 380px;    
+    }
+
+.menuText a {
+    color: #96A44F;
+    font-weight: bold;
+    }
+
+.menuText a:hover {
+    color: #96A44F;
+}
+
+.menuTitle {
+    color: #B43665;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menuTitle a {
+    color: #B43665;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menuTitle a:hover {
+    color: #B43665;
+}
+
+
+.menuDesc {
+	color: #3B3B3B;
+}
+
+.menuLink {
+	
+}
+
+.arrow {
+	float:left;
+	width: auto;
+	margin-right: 20px;	
+	height: 70px;
+}
+
+#newPlaylist {
+    background-image: url("images/btn-homepage-blue.png");
+    background-repeat: repeat-x;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 14px 5px;
+    text-shadow: 1px 1px 0 #3C666B !important;
+    font-size: 12px;	
+}
+
+#newPlayList:hover {
+    background-image: url("images/tertiary-nav-hover.gif");
+    background-repeat: repeat-x;
+}
+
+#btnDelete, #deletePlaylist {
+    background-image: url("images/btn-homepage-blue.png");
+    background-repeat: repeat-x;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 14px 5px;
+    text-shadow: 1px 1px 0 #3C666B !important;
+    }
+    
+#btnDelete:hover {
+    background-image: url("images/tertiary-nav-hover.gif");
+    background-repeat: repeat-x;
+
+    }
+    
+#btnSave, #save {
+    background-image: url("images/btn-homepage-blue.png");
+    background-repeat: repeat-x;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 14px 5px;
+    text-shadow: 1px 1px 0 #3C666B !important;	
+}    
+    
+
+#btnSave:hover, #save:hover {
+    background-image: url("images/tertiary-nav-hover.gif");
+    background-repeat: repeat-x;
+
+    }
+
+#btnCancel, #cancel {
+    background-image: url("images/btn-homepage-blue.png");
+    background-repeat: repeat-x;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 5px 14px 5px;
+    text-shadow: 1px 1px 0 #3C666B !important;
+    margin-left: 0px;	
+}    
+    
+
+#btnCancel:hover, #cancel:hover {
+    background-image: url("images/tertiary-nav-hover.gif");
+    background-repeat: repeat-x;
+    }
+    
+
+#btnGo {
+    background-image: url("images/btn-homepage-blue.png");
+    background-repeat: repeat-x;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    padding: 3px 14px 3px;
+    text-shadow: 1px 1px 0 #3C666B !important;	
+}
+
+#btnGo:hover {
+    background-image: url("images/tertiary-nav-hover.gif");
+    background-repeat: repeat-x;
+    }
+
+    
+ .ms-WPHeader td, .ms-fakewptitle {
+    border: 0px;
+}
+
+.ms-WPTitle {
+    font-family: Verdana,Tahoma,sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    padding: 4px 4px 12px 0;
+}
+
+.warning {
+	margin-bottom: 6px;
+}    
+
+.searchForm {
+	width: 180px;
+}
+
+.searchResults {
+	border-bottom: 1px solid #ADADAD;
+	width: 600px;
+}
+
+#name, #shortDesc, #linkUrl, #linkText, #customFields, #tags {
+	width: 350px;
+}
+
+#referenceId, #startDate, #endDate  {
+    width: 122px;
+}
+
+.ui-datepicker-trigger
+{
+	margin-bottom:-4px;
+}
+
+.moreVideos input {
+    clear: both;
+    display: block;
+    margin-bottom: 3px;
+    margin-left: 150px;
+}
+
+.oneVideo label {
+
+}
+
+.success
+{
+	border:solid 5px maroon;
+	padding:5px 5px 5px 5px;
+}
+
+.error
+{
+	border:solid 5px red;
+	padding:5px 5px 5px 5px;
+}

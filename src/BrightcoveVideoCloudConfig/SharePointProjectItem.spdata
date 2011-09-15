@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="VideoConfigUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <!--
+    <ProjectItemFile Source="Elements.xml" Target="BrightcoveVideoCloudConfig\" Type="ElementManifest" />
+    <ProjectItemFile Source="BrightcoveVideoCloudConfig.webpart" Target="BrightcoveVideoCloudConfig\" Type="ElementFile" />
+    <ProjectItemFile Source="VideoConfigUserControl.ascx" Target="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudConfig\" Type="TemplateFile" />
+    -->
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BrightcoveVideoCloudIntegration.VideoConfig" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+  <ExtensionData>
+    <ExtensionDataItem Key="DeploymentConflictResolutionBehavior" Value="None" />
+  </ExtensionData>
+</ProjectItem>

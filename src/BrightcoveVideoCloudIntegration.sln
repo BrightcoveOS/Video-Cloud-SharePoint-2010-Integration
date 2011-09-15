@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightcoveVideoCloudIntegration", "BrightcoveVideoCloudIntegration.csproj", "{EB7AFC7C-19B7-4034-A115-28034752F60B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrightcoveSDK", "SDK\BrightcoveSDK\BrightcoveSDK.csproj", "{66A5B904-883A-422F-A6E5-CAC6352D06F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB7AFC7C-19B7-4034-A115-28034752F60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB7AFC7C-19B7-4034-A115-28034752F60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB7AFC7C-19B7-4034-A115-28034752F60B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EB7AFC7C-19B7-4034-A115-28034752F60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB7AFC7C-19B7-4034-A115-28034752F60B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB7AFC7C-19B7-4034-A115-28034752F60B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{66A5B904-883A-422F-A6E5-CAC6352D06F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A5B904-883A-422F-A6E5-CAC6352D06F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A5B904-883A-422F-A6E5-CAC6352D06F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A5B904-883A-422F-A6E5-CAC6352D06F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

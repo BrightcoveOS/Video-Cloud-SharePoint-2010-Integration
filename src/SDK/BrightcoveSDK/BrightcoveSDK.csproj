@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66A5B904-883A-422F-A6E5-CAC6352D06F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BrightcoveSDK</RootNamespace>
+    <AssemblyName>BrightcoveSDK</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BCAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BCAPI.Playlist.Read.cs">
+      <DependentUpon>BCAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCAPI.Playlist.Write.cs">
+      <DependentUpon>BCAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCAPI.Video.Read.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>BCAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BCAPI.Video.Write.cs">
+      <DependentUpon>BCAPI.cs</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HTTP\BCAPIRequest.cs" />
+    <Compile Include="Entities\Containers\BCCollection.cs" />
+    <Compile Include="Entities\Errors\BCErrorException.cs" />
+    <Compile Include="Entities\Containers\BCQueryResult.cs" />
+    <Compile Include="BrightcoveConfig.cs" />
+    <Compile Include="Entities\Containers\CustomFields.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Extensions\HttpContextExtensions.cs" />
+    <Compile Include="Extensions\SystemTypeExtensions.cs" />
+    <Compile Include="HTTP\PostRequests.cs" />
+    <Compile Include="JSON\Converter.cs" />
+    <Compile Include="JSON\RPCError.cs" />
+    <Compile Include="JSON\RPCExtensions.cs" />
+    <Compile Include="JSON\RPCRequest.cs" />
+    <Compile Include="JSON\RPCResponse.cs" />
+    <Compile Include="Utils\BCComparers.cs" />
+    <Compile Include="Entities\BCCuePoint.cs" />
+    <Compile Include="Entities\BCImage.cs" />
+    <Compile Include="Entities\BCObject.cs" />
+    <Compile Include="Entities\BCPlayer.cs" />
+    <Compile Include="Entities\BCPlaylist.cs" />
+    <Compile Include="Entities\BCRendition.cs" />
+    <Compile Include="Entities\BCVideo.cs" />
+    <Compile Include="Entities\LogoOverlay.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entities\Containers\QueryResultPair.cs" />
+    <Compile Include="UI\ImageAdd.cs" />
+    <Compile Include="UI\PlaylistAddUpdate.cs" />
+    <Compile Include="UI\RemovePlayer.cs" />
+    <Compile Include="UI\UpdatePlayer.cs" />
+    <Compile Include="UI\VideoAddUpdate.cs" />
+    <Compile Include="UI\VideoPlayer.cs" />
+    <Compile Include="Utils\EmbedCode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Resources\AddRemovePlayer.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="key.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

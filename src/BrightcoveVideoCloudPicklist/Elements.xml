@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="Brightcove Video Cloud Picklist" List="113" Url="_catalogs/wp">
+    <File Path="BrightcoveVideoCloudPicklist\BrightcoveVideoCloudPicklist.webpart" Url="BrightcoveVideoCloudPicklist.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Brightcove" />
+    </File>
+  </Module>
+</Elements>

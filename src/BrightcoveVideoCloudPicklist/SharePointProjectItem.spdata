@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="VideoPicklistUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="BrightcoveVideoCloudPicklist\" Type="ElementManifest" />
+    <ProjectItemFile Source="BrightcoveVideoCloudPicklist.webpart" Target="BrightcoveVideoCloudPicklist\" Type="ElementFile" />
+    <ProjectItemFile Source="VideoPicklistUserControl.ascx" Target="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudPicklist\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BrightcoveVideoCloudIntegration.VideoPicklist" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+  <ExtensionData>
+    <ExtensionDataItem Key="DeploymentConflictResolutionBehavior" Value="None" />
+  </ExtensionData>
+</ProjectItem>
