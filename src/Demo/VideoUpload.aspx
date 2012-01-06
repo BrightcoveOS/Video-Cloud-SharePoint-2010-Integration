@@ -112,6 +112,32 @@ $(document).ready(function() {
 	if (vcIsAdmin && (vcVideoResult.id == 0)) {
 		$('.videoEditor').html("<p>Upload up to five videos to the Brightcove Video Cloud. Required fields are marked with an asterisk. Allow up to five minutes for changes to propagate through the Brightcove Video Cloud.</p>");
 	}
+	
+	$('#btnSave').attr('onclick', 'return validateFields();');
 });
+
+	function validateFields(){
+		if ( trim($('#name').attr('Value')) == '' || trim($('#file1').attr('Value')) == '' ) 
+		{
+			$('.videoEditor').html('<p class="error">Your changes could not be saved. Please make sure you have completed all required fields.</p>');
+			return false;
+		}
+		setShortDescIfEmpty();
+		return true;
+	}
+	
+	function setShortDescIfEmpty(){
+		if ( trim($('#shortDesc').attr('Value')) == '' )
+			$('#shortDesc').attr('Value', $('#name').attr('Value'));
+	}
+	
+	function trim(stringToTrim) {
+		if (stringToTrim != null)
+			return stringToTrim.replace(/^\s+|\s+$/g,"");
+		else
+			return '';
+	}
+
+
 </script>
 </asp:Content>
