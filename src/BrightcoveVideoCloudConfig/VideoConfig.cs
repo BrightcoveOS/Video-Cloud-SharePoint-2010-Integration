@@ -20,49 +20,49 @@ namespace BrightcoveVideoCloudIntegration.VideoConfig
         // Value of your Publisher ID for Brightcove Video Cloud
         public string PublisherId
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyPublisherId].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyPublisherId]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyPublisherId] = value; }
         }
 
         // Value of your read token for Brightcove Video Cloud
         public string ReadToken
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyReadToken].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyReadToken]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyReadToken] = value; }
         }
 
         // Value of your write token for Brightcove Video Cloud
         public string WriteToken
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyWriteToken].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyWriteToken]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyWriteToken] = value; }
         }
 
         // Value of your Read URL for Brightcove Video Cloud
         public string ReadUrl
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyReadUrl].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyReadUrl]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyReadUrl] = value; }
         }
 
         // Value of your Write URL for Brightcove Video Cloud
         public string WriteUrl
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyWriteUrl].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyWriteUrl]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyWriteUrl] = value; }
         }
 
         // Default value for Video Player ID for Brightcove Video Cloud
         public string DefaultVideoPlayerId
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyVideoPlayerId].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyVideoPlayerId]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyVideoPlayerId] = value; }
         }
 
         // Default value for Playlist Player ID for Brightcove Video Cloud
         public string DefaultPlaylistPlayerId
         {
-            get { return SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyPlaylistPlayerId].ToString(); }
+            get { return Convert.ToString(SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyPlaylistPlayerId]); }
             set { SPContext.Current.Web.AllProperties[VideoCloudWebPart.KeyPlaylistPlayerId] = value; }
         }
 

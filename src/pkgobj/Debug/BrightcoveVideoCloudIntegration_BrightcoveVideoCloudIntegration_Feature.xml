@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Brightcove Video Cloud Integration" AlwaysForceInstall="TRUE" Id="adbf5869-983e-4992-829b-fc810490480a" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="BrightcoveVideoCloudPlaylist\Elements.xml" />
+    <ElementFile Location="BrightcoveVideoCloudPlaylist\BrightcoveVideoCloudPlaylist.webpart" />
+    <ElementManifest Location="BrightcoveVideoCloudSearch\Elements.xml" />
+    <ElementFile Location="BrightcoveVideoCloudSearch\BrightcoveVideoCloudSearch.webpart" />
+    <ElementManifest Location="BrightcoveVideoCloudPicklist\Elements.xml" />
+    <ElementFile Location="BrightcoveVideoCloudPicklist\BrightcoveVideoCloudPicklist.webpart" />
+    <ElementManifest Location="BrightcoveVideoCloudPlayer\Elements.xml" />
+    <ElementFile Location="BrightcoveVideoCloudPlayer\BrightcoveVideoCloudPlayer.webpart" />
+    <ElementManifest Location="BrightcoveVideoCloudEditor\Elements.xml" />
+    <ElementFile Location="BrightcoveVideoCloudEditor\BrightcoveVideoCloudEditor.webpart" />
+  </ElementManifests>
+</Feature>

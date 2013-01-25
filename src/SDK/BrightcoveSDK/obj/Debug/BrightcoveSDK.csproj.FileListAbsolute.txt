@@ -36,3 +36,8 @@ C:\SRC\BrightCove\BrightcoveVideoCloudIntegration\src\SDK\BrightcoveSDK\bin\Debu
 C:\SRC\BrightCove\BrightcoveVideoCloudIntegration\src\SDK\BrightcoveSDK\obj\Debug\ResolveAssemblyReference.cache
 C:\SRC\BrightCove\BrightcoveVideoCloudIntegration\src\SDK\BrightcoveSDK\obj\Debug\BrightcoveSDK.dll
 C:\SRC\BrightCove\BrightcoveVideoCloudIntegration\src\SDK\BrightcoveSDK\obj\Debug\BrightcoveSDK.pdb
+C:\Brightcove\src\SDK\BrightcoveSDK\bin\Debug\BrightcoveSDK.dll
+C:\Brightcove\src\SDK\BrightcoveSDK\bin\Debug\BrightcoveSDK.pdb
+C:\Brightcove\src\SDK\BrightcoveSDK\obj\Debug\ResolveAssemblyReference.cache
+C:\Brightcove\src\SDK\BrightcoveSDK\obj\Debug\BrightcoveSDK.dll
+C:\Brightcove\src\SDK\BrightcoveSDK\obj\Debug\BrightcoveSDK.pdb

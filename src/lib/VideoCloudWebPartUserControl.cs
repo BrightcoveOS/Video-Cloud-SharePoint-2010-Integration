@@ -37,9 +37,7 @@ namespace BrightcoveVideoCloudIntegration
             {
                 if (this._isAdmin == 0)
                 {
-                    SPWeb web = SPContext.Current.Web;
-
-                    if (Util.IsUserAnAdmin(web))
+                    if (Util.IsUserAnAdmin(SPContext.Current.Web))
                     {
                         this._isAdmin = 1;
                     }

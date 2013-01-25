@@ -5,6 +5,7 @@ using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Security;
 using Microsoft.SharePoint.WebPartPages;
+using BrightcoveVideoCloudIntegration;
 
 namespace BrightcoveVideoCloudIntegration.Features.Demo
 {
@@ -22,14 +23,16 @@ namespace BrightcoveVideoCloudIntegration.Features.Demo
 
         public override void FeatureActivated(SPFeatureReceiverProperties properties)
         {
-            SPWeb checkWeb = (SPWeb)properties.Feature.Parent;
+           
             VideoPlayer.VideoPlayer player = null;
 
             // Is the admin group created yet?
-            if (Util.IsUserAnAdmin(checkWeb))
+            using (SPWeb checkWeb = (SPWeb)properties.Feature.Parent)
             {
-                // The user is in the admin group
-                checkWeb.Dispose();
+                if (Util.IsUserAnAdmin(checkWeb))
+                {
+                    // The user is in the admin group
+                }
             }
 
             // Search
@@ -65,6 +68,7 @@ namespace BrightcoveVideoCloudIntegration.Features.Demo
 
             // Upload
             //AddWebParts(properties, "Demo/VideoUpload.aspx", MakeConsumerWebPart(new VideoEditor.VideoEditor(), "Brightcove Video Cloud Editor"));
+
         }
 
         private static VideoConfig.VideoConfig MakeProviderWebPart()

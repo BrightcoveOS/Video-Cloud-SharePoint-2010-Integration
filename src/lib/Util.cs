@@ -306,10 +306,11 @@ namespace BrightcoveVideoCloudIntegration
                     SPUser defaultUser = null;
                     web.EnsureUser(user.LoginName);
                     web.AllowUnsafeUpdates = true;
-                    web.SiteGroups.Add(Util.Brightcove_AdministratorsGroup, ownerUser, defaultUser, "Brightcove Video Cloud account administrators group");
+                    web.SiteGroups.Add(Util.Brightcove_AdministratorsGroup, web.SiteAdministrators[0], defaultUser, "Brightcove Video Cloud account administrators group");
                     group = web.SiteGroups[Util.Brightcove_AdministratorsGroup];
-                    group.AddUser(user);
+                    group.AddUser(web.SiteAdministrators[0]);
                     web.Update();
+                    web.AllowUnsafeUpdates = false;
 
                     return true;
                 }

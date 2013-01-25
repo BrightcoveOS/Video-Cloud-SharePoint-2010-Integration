@@ -20,11 +20,6 @@
         }
         else
         {
-            $('.oneVideo').css('visibility', 'hidden');
-            $('.addVideo').hide();
-            $('#btnDelete').show();
-            $('.videoPlayer').show();
-
             // Check for result actions
             var results = $(".videoEditor").html();
 
@@ -35,9 +30,18 @@
                 else {
                     $('.videoEditor').prepend('<p class="success">Your changes were successfully saved. Please allow up to five minutes for changes to propagate through the Brightcove Video Cloud.</p>');
                 }
+
+                $('.oneVideo').css('visibility', 'hidden');
+                $('.addVideo').hide();
+                $('#btnDelete').show();
+                $('.videoPlayer').show();
             }
             else if (results.indexOf("ERROR: ") >= 0) {
                 $('.videoEditor').prepend('<p class="error">Your changes could not be saved. Please make sure you have completed all required fields.</p>');
+
+                $('#btnDelete').hide();
+                $('.videoPlayer').hide();
+                $('.videoPlayer').hide();
             }
         }
 
@@ -65,7 +69,7 @@ Required fields are marked with an asterisk. Allow up to five minutes for change
     </div>
 
     <div>
-        <label for="shortDesc">Short Description</label>
+        <label for="shortDesc">Short Description<span class="required">*</span></label>
         <input type="text" name="shortDesc" id="shortDesc" />
     </div>
 

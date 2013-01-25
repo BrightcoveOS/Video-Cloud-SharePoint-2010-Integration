@@ -15,6 +15,7 @@ namespace BrightcoveVideoCloudIntegration.VideoEditor
     public partial class VideoEditorUserControl : VideoCloudWebPartUserControl
     {
         protected BCVideo video;
+        private string vcErrorCode;
 
         private void SetVideo(long videoId)
         {
@@ -129,6 +130,7 @@ namespace BrightcoveVideoCloudIntegration.VideoEditor
         {
             long vid = 0;
             bool doFormLoad = true;
+            vcErrorCode = "0"; ;
 
             if (!this.IsAdmin)
             {
@@ -214,6 +216,7 @@ namespace BrightcoveVideoCloudIntegration.VideoEditor
                                 {
                                     vid = 0;
                                     message.InnerHtml += "<p class=\"error\">ERROR: " + response.error.message + "</p>";
+                                    vcErrorCode = response.error.code;
                                 }
                                 else
                                 {
@@ -282,6 +285,7 @@ namespace BrightcoveVideoCloudIntegration.VideoEditor
 @"<script language=""javascript"" type=""text/javascript"" charset=""utf-8"" defer=""defer"">/*<![CDATA[*/
     var vcVideoResult = {0};
     var vcIsAdmin = {1};
+    var vcErrorCode = {2};
 
     if (vcVideoResult != null)
     {{
@@ -337,7 +341,7 @@ namespace BrightcoveVideoCloudIntegration.VideoEditor
 
         if (vcVideoResult.tags) video['tags'].value = vcVideoResult.tags;
     }}
-/*]]>*/</script>", this.video.ToJSON().Replace(": AD_SUPPORTED", ": \"AD_SUPPORTED\"").Replace(": FREE", ": \"FREE\""), this.IsAdmin.ToString().ToLower());
+/*]]>*/</script>", this.video.ToJSON().Replace(": AD_SUPPORTED", ": \"AD_SUPPORTED\"").Replace(": FREE", ": \"FREE\""), this.IsAdmin.ToString().ToLower(), vcErrorCode);
 
                 this.Controls.Add(new LiteralControl(output));
             }

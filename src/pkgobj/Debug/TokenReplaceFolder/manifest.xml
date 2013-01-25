@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ac0b1980-abf6-47a2-9b74-dbdfc3aa6664" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BrightcoveVideoCloudIntegration.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="BrightcoveVideoCloudIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a792aa6dfad51a4" Namespace="BrightcoveVideoCloudIntegration.VideoPlaylist" TypeName="*" />
+        <SafeControl Assembly="BrightcoveVideoCloudIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a792aa6dfad51a4" Namespace="BrightcoveVideoCloudIntegration.VideoSearch" TypeName="*" />
+        <SafeControl Assembly="BrightcoveVideoCloudIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a792aa6dfad51a4" Namespace="BrightcoveVideoCloudIntegration.VideoPicklist" TypeName="*" />
+        <SafeControl Assembly="BrightcoveVideoCloudIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a792aa6dfad51a4" Namespace="BrightcoveVideoCloudIntegration.VideoPlayer" TypeName="*" />
+        <SafeControl Assembly="BrightcoveVideoCloudIntegration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6a792aa6dfad51a4" Namespace="BrightcoveVideoCloudIntegration.VideoEditor" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudPlaylist\VideoPlaylistUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudSearch\VideoSearchUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudPicklist\VideoPicklistUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudPlayer\VideoPlayerUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudEditor\VideoEditorUserControl.ascx" />
+    <TemplateFile Location="Layouts\BrightcoveVideoCloudIntegration\Chooser.aspx" />
+    <TemplateFile Location="Layouts\BrightcoveVideoCloudIntegration\images\btn-homepage-blue.png" />
+    <TemplateFile Location="Layouts\BrightcoveVideoCloudIntegration\images\playlist.png" />
+    <TemplateFile Location="Layouts\BrightcoveVideoCloudIntegration\images\tertiary-nav-hover.gif" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BrightcoveVideoCloudIntegration_BrightcoveVideoCloudIntegration\Feature.xml" />
+    <FeatureManifest Location="BrightcoveVideoCloudIntegration_Demo\Feature.xml" />
+  </FeatureManifests>
+</Solution>

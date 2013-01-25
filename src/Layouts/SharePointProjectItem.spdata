@@ -1,14 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="VideoEditorUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
-  <Files>
-    <ProjectItemFile Source="Elements.xml" Target="BrightcoveVideoCloudEditor\" Type="ElementManifest" />
-    <ProjectItemFile Source="BrightcoveVideoCloudEditor.webpart" Target="BrightcoveVideoCloudEditor\" Type="ElementFile" />
-    <ProjectItemFile Source="VideoEditorUserControl.ascx" Target="CONTROLTEMPLATES\BrightcoveVideoCloudIntegration\BrightcoveVideoCloudEditor\" Type="TemplateFile" />
-  </Files>
-  <SafeControls>
-    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BrightcoveVideoCloudIntegration.VideoEditor" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
-  </SafeControls>
-  <ExtensionData>
-    <ExtensionDataItem Key="DeploymentConflictResolutionBehavior" Value="None" />
-  </ExtensionData>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.MappedFolder" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Package" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <ProjectItemFolder Target="Layouts" Type="TemplateFile" />
 </ProjectItem>

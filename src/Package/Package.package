@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ac0b1980-abf6-47a2-9b74-dbdfc3aa6664" solutionId="ac0b1980-abf6-47a2-9b74-dbdfc3aa6664" resetWebServer="false" name="BrightcoveVideoCloudIntegration" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="202fea03-59bb-48ee-9881-b96254f68acd" />
+    <featureReference itemId="2bb9a4a9-135f-47b8-a437-57a9b926b2f2" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="c6384170-b197-4622-936c-257205a24edf" />
+  </projectItems>
+</package>

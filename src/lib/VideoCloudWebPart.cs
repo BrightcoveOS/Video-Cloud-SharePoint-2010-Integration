@@ -41,7 +41,7 @@ namespace BrightcoveVideoCloudIntegration
 
         protected IVideoCloudConfig configProvider = null;
 
-        private static Hashtable _cachedConfigProvider = null;
+        private Hashtable _cachedConfigProvider = null;
         private string[] _videoListCache = null;
         private string[] _playlistCache = null;
         private bool _isAsyncCall = false;
