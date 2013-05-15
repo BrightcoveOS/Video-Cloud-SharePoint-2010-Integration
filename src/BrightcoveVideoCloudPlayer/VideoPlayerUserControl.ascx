@@ -9,8 +9,8 @@
 
 <div id="message" class="videoPlayer" runat="server"></div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
-<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript" src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js"></script>
 <script language="JavaScript" type="text/javascript">
     var vcCurrentWeb = "<%= Microsoft.SharePoint.SPContext.Current.Web.Url %>";
 

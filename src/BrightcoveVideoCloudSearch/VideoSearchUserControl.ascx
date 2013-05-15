@@ -7,7 +7,7 @@
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VideoSearchUserControl.ascx.cs" Inherits="BrightcoveVideoCloudIntegration.VideoSearch.VideoSearchUserControl" %>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready(InitVideoSearch);
 
@@ -50,9 +50,9 @@
     function CopyBlogCode(vid) {
         var blog = '<object id="flashObj" width="640" height="390" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,47,0"><param name="movie" value="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" /><param name="bgcolor" value="#FFFFFF" /><param name="flashVars" value="@videoPlayer=' +
             vid + '&playerID=' + 
-            vcDefaultPlayerId + '&playerKey=AQ~~,AAAA5HYg_Wk~,dVrb4Dhl3iu-bD2b6KPfevAEl_qyND1e&domain=embed&dynamicStreaming=true" /><param name="base" value="http://admin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="@videoPlayer=' +
+            vcDefaultPlayerId + '&playerKey=AQ~~,AAAA5HYg_Wk~,dVrb4Dhl3iu-bD2b6KPfevAEl_qyND1e&domain=embed&dynamicStreaming=true" /><param name="base" value="https://sadmin.brightcove.com" /><param name="seamlesstabbing" value="false" /><param name="allowFullScreen" value="true" /><param name="swLiveConnect" value="true" /><param name="allowScriptAccess" value="always" /><embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#FFFFFF" flashVars="@videoPlayer=' +
             vid + '&playerID=' + 
-            vcDefaultPlayerId + '&playerKey=AQ~~,AAAA5HYg_Wk~,dVrb4Dhl3iu-bD2b6KPfevAEl_qyND1e&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="640" height="390" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>';
+            vcDefaultPlayerId + '&playerKey=AQ~~,AAAA5HYg_Wk~,dVrb4Dhl3iu-bD2b6KPfevAEl_qyND1e&domain=embed&dynamicStreaming=true" base="https://sadmin.brightcove.com" name="flashObj" width="640" height="390" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></embed></object>';
         prompt('Copy this HTML code to add the video to your blog', blog);
         //window.clipboardData.setData('Text', blog);
     }
