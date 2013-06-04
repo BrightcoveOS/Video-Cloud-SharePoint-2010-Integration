@@ -7,7 +7,7 @@
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="VideoPlaylistUserControl.ascx.cs" Inherits="BrightcoveVideoCloudIntegration.VideoPlaylist.VideoPlaylistUserControl" %>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 var vcPlaylistId = "<%= this.PlaylistId %>";
 var vcPlayVideoLink = "<%= this.PlayVideoLink %>";
@@ -294,7 +294,7 @@ function CopyBlogCode(pid) {
             width + '&amp;height=' + height + '&amp;flashID=' + opid + '&amp;playerID=' + playerId + '&amp;%40playlistTabs=' +
             pid + '&amp;%40playlistCombo=' + pid + '&amp;%40videoList=' + pid + '&amp;dynamicStreaming=true&amp;cacheAMFURL=http%3A%2F%2Fshare.brightcove.com%2Fservices%2Fmessagebroker%2Famf&amp;secureConnections=true&amp;bgcolor=%23' + 
             bgColor + '&amp;autoStart=true&amp;isVid=true&amp;isUI=true&amp;debuggerID=">' + 
-		'    <param name="Base" value="http://admin.brightcove.com">' + 
+		'    <param name="Base" value="https://sadmin.brightcove.com">' + 
 		'    <param name="AllowScriptAccess" value="always">' + 
 		'    <param name="BGColor" value="' + bgColor + '">' + 
 		'    <param name="SWRemote" value="">' + 
@@ -302,7 +302,7 @@ function CopyBlogCode(pid) {
 		'    <param name="AllowNetworking" value="all">' + 
 		'    <param name="AllowFullScreen" value="true">' + 
 		'    <embed src="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&isUI=1" bgcolor="#' + bgColor + '" flashVars="@40playlistTabs=' +
-            pid + '&@playlistCombo=' + pid + '&playerID=' + playerId + '&@videoList=' + pid + '&playerKey=AQ~~,AAAA5HYg_Wk~,dVrb4Dhl3iu-bD2b6KPfevAEl_qyND1e&domain=embed&dynamicStreaming=true" base="http://admin.brightcove.com" name="flashObj" width="' + 
+            pid + '&@playlistCombo=' + pid + '&playerID=' + playerId + '&@videoList=' + pid + '&playerKey=AQ~~,AAAA5HYg_Wk~,dVrb4Dhl3iu-bD2b6KPfevAEl_qyND1e&domain=embed&dynamicStreaming=true" base="https://sadmin.brightcove.com" name="flashObj" width="' + 
             width + '" height="' + height + '" seamlesstabbing="false" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always" swLiveConnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">' +
 		'    </embed>' + 
 	    '</object>';
